@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": ["es2018", "esnext", "dom"],
+    "module": "commonjs",
+    "target": "es2018",
+    "removeComments": false,
+    "esModuleInterop": true,
+    "preserveConstEnums": true,
+    "outDir": "./dist/src",
+    "declaration": true,
+    "rootDir": "./src",
+    "resolveJsonModule": true,
+    "sourceMap": false,
+    "types": ["reflect-metadata", "jest", "node"],
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/test/*", "node_modules", "**/*.spec.ts"]
+}
