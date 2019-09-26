@@ -24,7 +24,7 @@ console.log(
 
 console.log("naiveSumZero([1, 2, 3]) ", naiveSumZero([1, 2, 3]));
 
-//////////////// Multiple Poiter Partern ////////////////
+//////////////// Multiple Poiters Partern ////////////////
 function sumZero(arr) {
   let left = 0;
   let right = arr.length - 1;
