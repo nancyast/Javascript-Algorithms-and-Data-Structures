@@ -14,11 +14,11 @@ function same(arr1, arr2) {
   }
 
   for (let i = 0; i < arr1.length; i++) {
-    const hasCorrespondingValue = arr2.indexOf(arr1[i] ** 2);
-    if (hasCorrespondingValue === -1) {
+    const hasCorrespondingIndex = arr2.indexOf(arr1[i] ** 2);
+    if (hasCorrespondingIndex === -1) {
       return false;
     }
-    arr2.splice(hasCorrespondingValue, 1);
+    arr2.splice(hasCorrespondingIndex, 1);
   }
 
   return true;
