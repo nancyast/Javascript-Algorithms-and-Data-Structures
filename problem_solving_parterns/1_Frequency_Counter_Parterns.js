@@ -26,3 +26,32 @@ function same(arr1, arr2) {
 
 const result = same([1, 2, 3], [1, 9, 4]);
 console.log("result ", result);
+
+//////////////// Frequency Counter Partern ////////////////
+function objSame(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+
+  const obj1 = arr1.reduce(
+    (acc, e) => ({ ...acc, [e]: (acc[e] || 0) + 1 }),
+    {}
+  );
+  const obj2 = arr2.reduce(
+    (acc, e) => ({ ...acc, [e]: (acc[e] || 0) + 1 }),
+    {}
+  );
+
+  for (let i = 0; i < arr1.length; i++) {
+    const number = arr1[i];
+
+    if (obj1[number] !== obj2[number ** 2]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+const objResult = same([1, 2, 3], [1, 9, 4]);
+console.log("objResult ", objResult);
